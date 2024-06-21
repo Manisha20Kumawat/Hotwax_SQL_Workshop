@@ -98,7 +98,7 @@ DROP COLUMN State,
 DROP COLUMN PinCode;
 
 ### Tables Users, Products, Orders
-![Users](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/3a13c578-03d3-4ab9-9d40-2627898caa6a)
+![Users](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/ab48a342-c7ba-4f85-b82c-326aa39afe78)
 
 ![Products](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/1191e6ac-3056-4801-a92f-e66aaeadb9b0)
 
@@ -197,6 +197,48 @@ GROUP BY
 ![TotalAll](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/82481aae-1d7a-47b2-8be8-022b276a1fbb)
 
 ### Update Your City
+UPDATE Address
+SET City = 'NewCityName'
+WHERE PinCode = (
+    SELECT PinCode 
+    FROM User 
+    WHERE UserId = 1
+);
+
+### Query Output
+![Address](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/bbd7ec2a-92a3-4915-b2bb-6f72513f14dd)
+
+![Update City](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/70621f5a-6e74-4b1c-960d-11b5805870b6)
+
+### Change Product Description
+SELECT * FROM Products
+WHERE ProductId = 1;
+
+UPDATE Products
+SET ProductDescription = 'New Product Description'  
+WHERE ProductId = 1;
+
+SELECT * FROM Products
+WHERE ProductId = 1;
+
+### Query Output
+![Product Description](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/0a968162-28d7-47de-bf67-a1e91b39f01e)
+
+![Change Product Description](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/95eae023-7821-4773-8093-ad647eb51910)
+
+### Display Returnable Products
+SELECT 
+    ProductId,
+    ProductName,
+    ProductDescription
+FROM 
+    Products 
+WHERE 
+    ProductReturnable = 'Yes';
+    
+### Query Output
+![Returnable](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/44e56d4f-5969-4955-a9ce-2b6ae69f6c7c)
+
 
 
 
