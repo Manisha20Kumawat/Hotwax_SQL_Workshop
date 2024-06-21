@@ -100,7 +100,7 @@ DROP COLUMN PinCode;
 ### Tables Users, Products, Orders
 ![Users](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/ab48a342-c7ba-4f85-b82c-326aa39afe78)
 
-![Products](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/1191e6ac-3056-4801-a92f-e66aaeadb9b0)
+![Products](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/bac764bd-a7dc-4a45-8be4-c8eac18f7947)
 
 ![Orders Updated](https://github.com/Manisha20Kumawat/Hotwax_SQL_Workshop/assets/142007598/a0128c80-5469-4ebe-963b-d6a21810e350)
 
